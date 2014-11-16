@@ -1,0 +1,115 @@
+extends layout
+
+block content
+	div.header
+		.title <b>S</b>ea <b>U</b>rchin <b>N</b>ew <b>Z</b>ealand
+		.subtext Quality Kina
+
+	#images
+		ul
+			li(style="background-image:url(images/coromandelFarm.jpg);")
+			li(style="background-image:url(images/cooksBeach.jpg);")
+			li(style="background-image:url(images/SimpsonsBeach.jpg);")
+
+	svg(xmlns="http://www.w3.org/2000/svg"
+			link="http://www.w3.org/1999/xlink"
+			version="1.1")
+		path.left( d="m 0 0 l -20 17 a 6 6 0 0 0 0 6 l  20  17")
+		path.right(d="m 0 0 l  20 17 a 6 6 0 0 1 0 6 l -20  17")
+
+	.body
+		img.title(src="images/cracked-kina.jpg")
+		p SUNZ is the only licensed export packhouse in New Zealand for Kina processing. In operation since 1992 and owned by Whitianga local Peter Herbert (Herb), SUNZ provides delicious, quality Kina for both domestic and international markets.
+		p Sea urchin (Latin name Evechinus Chloroticus), also known as Kina, or 'uni' in Japanese, is a sea food considered a delicacy in many countries.  SUNZ Kina are mainly sourced from the Coromandel region and are supplied fresh to retailers as required.
+
+		h1 About
+
+		p The professional standards set by Herb and his team well exceed the domestic requirements of NZFSA, and make them a New Zealand leader in export standards for their product.
+
+		p Sea Urchin New Zealand is a family oriented company encompassing harvesting, processing and marketing, of primarily East Coast North Island Kina. Since 1992, Herb has grown the Kina industry from the odd weekend market supply, to supporting an extensive export-standard processing plant producing quality Kina roe. SUNZ processes in excess of 100 tonne of green Kina per year.
+
+		video(src="videos/harvesting.mp4" controls="controls").
+			Sorry, your browser doesn't support embedded videos, but don't worry, you can <a href="videos/harvesting.mp4">download it</a> and watch it with your favorite video player
+
+		h2 Harvesting
+
+		p Generally operating from a home base at Flaxmill Bay, Whitianga, the dive team, consisting of four divers and a boatman, travel from Mercury Bay up to 160 kilometres per day to collect quality product. The days catch is brought back to our home base where it is packed in a trailer as a live product, and early the next morning is transported to our Whitianga factory for processing. Our dive team consists of New Zealand representative spear fishermen, giving the harvesting side of the operation the edge when it comes to rough days, cold weather and poor visibility. Our workhorse is a custom built eight metre aluminium hull powered by 2 x 250hp Suzuki outboard motors.
+
+		.sidebar
+			img(src="images/processing-1.jpg")
+			img(src="images/processing-2.jpg")
+			img(src="images/processing-3.jpg")
+			img(src="images/processing-4.jpg")
+
+		h2 Processing
+
+		p Our factory manager ensures this aspect of the operation is ready to roll the moment she finds out diving is underway. This encompasses ensuring our export standard processing venue is spotlessly clean and tidy and all equipment is sanitised ready for operation the next day. Packing orders are established, ice is organised, staff are notified, adequate polys and pottles are stocked, messages are cleared from the phone - and of course smoko is arranged! Processing cranks up at 5:45am the next day under the guidance of the factory manager, and the assistance of 16 additional processors. The most critical aspect of the processing is getting the temperature of the roe down to approximately 1°C, followed by quick dispatch to the markets.  As in all fishing games, it is all about the two T's - Time and Temperature.
+
+
+		h2 Marketing
+
+		p Dispatch to the markets is usually achieved within 18 hours of processing to domestic markets.  For international markets we need to allow 48 hours from processing. As the product has a 15 day shelf life, we need to give our retailers as much time as possible to sell all of their orders. Regular customers have become very familiar with Herb calling when product is available, and are happy in the knowledge that they will get their orders delivered promptly.
+
+		h1 Pricing
+
+		table.pricing
+			tr
+				th product
+				th price
+				th min order
+			tr
+				td 200g pottle domestic
+				td $16
+				td 0
+			tr
+				td 200g pottle international
+				td $18
+				td 400
+			tr
+				td 120g pottle domestic
+				td $11
+				td 0
+			tr
+				td 120g pottle international
+				td $13
+				td 600
+
+		p The traditional pottle size is 200g nett. We also have available a squat pottle which is 120g nett. The roe is held in a brine collected from the Kina processing operation and is added to the pottle to ensure stable salinity. The temperature of the pottles is reduced to less than 4°C within 20 minutes of cracking the Kina open. Our smartly presented pottles reflect the quality of New Zealand's most sought after Kina roe. They have a use-by date of 15 days from processing.
+
+		p Polybins are packed in 28, 40, 60 or 80 pottles per poly
+
+	footer
+		.wrapper
+			.contact
+				h2 Peter (Herb) Herbet
+				img(src="images/placeholder-male.png", alt="the face of SUNZ")
+				table.details
+					tr
+						td mobile
+						td: a(href="tel:+64274570945") 0274 570 945
+					tr
+						td landline/fax
+						td: a(href="tel:+6478664822") 07 866 4822
+					tr
+						td email
+						td: a(href="mailto:herb@sunzkina.co.nz") herb@sunzkina.co.nz
+					tr
+						td address
+						td
+							span 1049 Purangi Road
+							span RD1
+							span Whitianga
+
+			.contact
+				h2 SUNZ Processing Plant
+				img(src="images/headquarters.jpg", alt="the headquarters of SUNZ")
+				table.details
+					tr
+						td landline
+						td: a(href="tel:+6478664398") 07 866 4398
+					tr
+						td address
+						td
+							span 271 South Highway
+							span Moewai Park
+							span Whitianga
