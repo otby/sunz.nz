@@ -29,7 +29,7 @@ a {
 .body {
   padding: 0px 50px 0 50px;
   margin: auto;
-  max-width: 900px;
+  max-width: 750px;
 }
 
 .body > img:first-of-type {
@@ -169,6 +169,7 @@ svg {
   top: 30%;
   overflow: visible;
   margin-top: -20px;
+  width: 1px;
 }
 
 svg path {
@@ -260,7 +261,7 @@ footer {
 footer .wrapper {
   margin: auto;
   width: 60%;
-  max-width: 900px;
+  max-width: 750px;
 }
 
 footer h2 {

@@ -52,7 +52,7 @@ flow(document.querySelector('.body'), {
 	lineRatio: 1.5,
 	minWidth: 300,
 	min: 14,
-	max: 17
+	max: 16
 })
 
 viewport.on('resize', function(){
