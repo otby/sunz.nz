@@ -5,6 +5,7 @@ var favicon = require('serve-favicon')
 var compress = require('compression')
 var express = require('express')
 var logger = require('morgan')
+var mktmp = require('mktmp')
 var path = require('path')
 var gm = require('gm').subClass({ imageMagick: true })
 var fs = require('fs')
@@ -29,11 +30,13 @@ app.get('/', function index(req, res){
 	res.render('index')
 })
 
+var dir = mktmp.createDirSync('XXX-resized-images') + '/'
+
 app.get('/images/:name', function(req, res, next){
 	var max = req.cookies.resolution
 	var master = __dirname + '/public' + req.path
 	if (!max) res.sendFile(master)
-	var name = __dirname + '/tmp/' + max + ':' + req.params.name
+	var name = dir + max + ':' + req.params.name
 	fs.exists(name, function(exists){
 		if (exists) return res.sendFile(name)
 		gm(master)
