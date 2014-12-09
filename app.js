@@ -10,10 +10,6 @@ var path = require('path')
 var gm = require('gm').subClass({ imageMagick: true })
 var fs = require('fs')
 
-if (!fs.existsSync(__dirname + '/tmp')) {
-	fs.mkdirSync(__dirname + '/tmp')
-}
-
 var app = express()
 
 app.engine('jade', require('jade').__express)
