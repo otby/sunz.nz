@@ -256,8 +256,8 @@ table.pricing td {
 
 footer {
   margin: 0;
-  padding: 20px;
-  font-size: .9em;
+  padding: 2% 0;
+  font-size: 1em;
   border-top: 1px solid rgb(80,80,80);
   background: linear-gradient(to bottom, rgba(0, 0, 0, .4),  rgba(0, 0, 0, .4)),
               url(/images/noise_lines.png);
@@ -269,6 +269,7 @@ footer .wrapper {
   margin: auto;
   width: 60%;
   max-width: 750px;
+  min-width: 300px;
 }
 
 footer h2 {
@@ -276,7 +277,7 @@ footer h2 {
 }
 
 .contact {
-  margin: 20px;
+  margin: 5% 1%;
   display: inline-block;
   vertical-align: top;
   text-align: center;
