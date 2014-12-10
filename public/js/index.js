@@ -4,19 +4,8 @@ var Swipe = require('swipe')
 var bind = require('event').bind
 
 var swipe = new Swipe(document.getElementById('images'))
-var svg = document.getElementsByTagName('svg')[0]
-var left = svg.firstChild
-var right = svg.lastChild
-
-function place(arrow, offset){
-	var d = arrow.getAttribute('d')
-	arrow.setAttribute('d', d.replace(/-?\d+/, offset.toFixed(0)))
-}
-
-function placeArrows(){
-	place(left, -(viewport.width/2) + 50)
-	place(right, (viewport.width/2) - 50)
-}
+var left = document.getElementsByTagName('svg')[0].firstChild
+var right = document.getElementsByTagName('svg')[1].firstChild
 
 swipe.on('showing', function(i, el){
 	if (el.previousSibling) {
@@ -57,7 +46,4 @@ flow(document.querySelector('.body'), {
 
 viewport.on('resize', function(){
 	swipe.refresh()
-	placeArrows()
 })
-
-viewport.emit('resize')

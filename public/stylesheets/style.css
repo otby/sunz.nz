@@ -165,11 +165,18 @@ svg {
   -webkit-user-select: none;
   user-select: none;
   position: absolute;
-  left: 50%;
   top: 30%;
   overflow: visible;
   margin-top: -20px;
   width: 1px;
+}
+
+svg.left {
+  left: 40px;
+}
+
+svg.right {
+  right: 40px;
 }
 
 svg path {
