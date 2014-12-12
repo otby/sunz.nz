@@ -45,7 +45,16 @@ app.get('/images/:name', function(req, res, next){
 })
 
 if (app.get('env') == 'development') {
-	app.use(require('serve-js')(path.join(__dirname, 'public')))
+	var Duo = require('duo')
+	app.get('/js/index.js', function(req, res, next){
+		Duo(__dirname)
+			.entry('./public/js/index.js')
+			.run(function(err, src){
+				if (err) return next(err)
+				res.type('application/javascript')
+				res.end(src)
+			})
+	})
 }
 
 if (app.get('env') == 'production') {

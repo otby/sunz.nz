@@ -2,8 +2,8 @@
 serve: node_modules
 	@node app.js
 
-node_modules: dependencies.json
-	@packin install -m $<,package.json,component.json -f $@
+node_modules: package.json
+	@packin install -m $< -f $@
 
 built/js/index.js: public/js/index.js
 	mkdir -p $$(dirname $@) \

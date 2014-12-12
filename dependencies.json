@@ -1,9 +1,0 @@
-{
-  "production": {
-    "swipe": "/Users/jkroso/Projects/js/swipe",
-    "event": "http://github.com/component/event/tarball/0.1.4",
-    "flowtype": "http://github.com/jkroso/flowtype/tarball/1.0.0",
-    "router": "http://github.com/ianstormtaylor/router/tarball/1.0.2",
-    "viewport": "http://github.com/jkroso/viewport/tarball/1.0.0"
-  }
-}

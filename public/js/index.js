@@ -1,7 +1,7 @@
-var viewport = require('viewport')
-var flow = require('flowtype')
-var Swipe = require('swipe')
-var bind = require('event').bind
+var bind = require('component/event').bind
+var viewport = require('jkroso/viewport')
+var Swipe = require('component/swipe')
+var flow = require('jkroso/flowtype')
 
 var swipe = new Swipe(document.getElementById('images'))
 var left = document.getElementsByTagName('svg')[0].firstChild
