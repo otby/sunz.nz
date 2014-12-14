@@ -49,6 +49,7 @@ if (app.get('env') == 'development') {
 	app.get('/js/index.js', function(req, res, next){
 		Duo(__dirname)
 			.entry('./public/js/index.js')
+			.development(true)
 			.run(function(err, src){
 				if (err) return next(err)
 				res.type('application/javascript')
