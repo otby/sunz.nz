@@ -6,7 +6,7 @@
   }
 }
 
-@media (max-width: 1210px) {
+@media (max-width: 810px) {
   footer .contact {
     margin: auto;
     padding: 20px 0;
@@ -282,7 +282,7 @@ footer {
 
 footer .wrapper {
   margin: auto;
-  width: 60%;
+  width: 90%;
   max-width: 850px;
   min-width: 300px;
 }
