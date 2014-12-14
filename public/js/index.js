@@ -7,20 +7,20 @@ var swipe = new Swipe(document.getElementById('images'))
 var left = document.getElementsByTagName('svg')[0].firstChild
 var right = document.getElementsByTagName('svg')[1].firstChild
 
-swipe.on('showing', function(i, el){
-	if (el.previousSibling) {
-		left.classList.remove('hidden')
-	} else {
+swipe.on('showing', function(){
+	if (swipe.isFirst()) {
 		left.classList.add('hidden')
-	}
-	if (el.nextSibling) {
-		right.classList.remove('hidden')
 	} else {
+		left.classList.remove('hidden')
+	}
+	if (swipe.isLast()) {
 		right.classList.add('hidden')
+	} else {
+		right.classList.remove('hidden')
 	}
 })
 
-swipe.emit('showing', 0, {nextSibling:true})
+swipe.show(0)
 
 bind(window, 'keydown', function(e){
 	if (e.which == 37/*left*/)  swipe.prev()
