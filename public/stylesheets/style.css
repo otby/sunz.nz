@@ -265,17 +265,22 @@ table.pricing {
   margin-top: 0;
   margin-bottom: 20px;
   margin-right: 0;
+  text-align: left;
 }
 
-table.pricing th,
-table.pricing td {
-  padding: 0 20px 5px 20px;
+table.pricing th {
+  border-bottom: 1px solid rgb(204, 204, 204);
+  padding: 10px 20px;
 }
 
 table.pricing td {
-  border: 1px solid rgb(90,90,90);
-  padding: 5px;
-  text-align: center;
+  border-bottom: 1px solid rgb(204, 204, 204);
+  color: rgb(102, 102, 102);
+  padding: 6px 20px;
+}
+
+table.pricing tbody tr:hover td {
+  color: rgb(20, 20, 20);
 }
 
 footer {
