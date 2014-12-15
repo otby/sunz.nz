@@ -269,18 +269,25 @@ table.pricing {
 }
 
 table.pricing th {
-  border-bottom: 1px solid rgb(204, 204, 204);
   padding: 10px 20px;
 }
 
-table.pricing td {
+table.pricing thead tr {
+  border-color: rgb(0, 51, 153);
+  color: rgb(0, 51, 153);
+}
+
+table.pricing tr {
+  color: rgb(102, 102, 153);
   border-bottom: 1px solid rgb(204, 204, 204);
-  color: rgb(102, 102, 102);
+}
+
+table.pricing td {
   padding: 6px 20px;
 }
 
 table.pricing tbody tr:hover td {
-  color: rgb(20, 20, 20);
+  color: rgb(0, 51, 153);
 }
 
 footer {
