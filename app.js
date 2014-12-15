@@ -26,11 +26,11 @@ app.get('/', function index(req, res){
 	res.render('index')
 })
 
-var dir = mktmp.createDirSync('XXX-resized-images') + '/'
+var dir = mktmp.createDirSync('XXX-resized-images') + path.sep
 
 app.get('/images/:name', function(req, res, next){
 	var max = req.cookies.resolution
-	var master = __dirname + '/public' + req.path
+	var master = path.join(__dirname, 'public', req.path)
 	if (!max) res.sendFile(master)
 	var name = dir + max + ':' + req.params.name
 	fs.exists(name, function(exists){
