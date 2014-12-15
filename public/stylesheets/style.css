@@ -269,7 +269,7 @@ table {
   margin-top: 0;
   margin-bottom: 20px;
   margin-right: 0;
-  text-align: left;
+  text-align: center;
 }
 
 table.pricing th {
@@ -288,6 +288,7 @@ table.pricing tr {
 
 table.pricing td[rowspan] {
   border-right: 1px solid rgb(204, 204, 204);
+  text-align: center;
 }
 
 table.pricing td {
