@@ -49,11 +49,11 @@ if (app.get('env') == 'development') {
 	app.get('/js/index.js', function(req, res, next){
 		Duo(__dirname)
 			.entry('./public/js/index.js')
-			.development(true)
-			.run(function(err, src){
+			.sourceMap('inline')
+			.run(function(err, result){
 				if (err) return next(err)
 				res.type('application/javascript')
-				res.end(src)
+				res.end(result.code)
 			})
 	})
 }

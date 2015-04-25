@@ -1,6 +1,6 @@
 
 serve: node_modules
-	@node app.js
+	@node --harmony-generators app.js
 
 node_modules: package.json
 	@packin install -m $< -f $@
@@ -8,12 +8,12 @@ node_modules: package.json
 built/js/index.js: public/js/index.js
 	mkdir -p $$(dirname $@) \
 	&& curl http://localhost:3000/js/index.js \
-	| minify -l js > $@
+	| minify -js > $@
 
 built/stylesheets/style.css: public/stylesheets/style.css
 	mkdir -p $$(dirname $@) \
 	&& curl http://localhost:3000/stylesheets/style.css \
-	| minify -l css > $@
+	| minify -css > $@
 
 build: built/stylesheets/style.css built/js/index.js
 
