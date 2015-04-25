@@ -18,10 +18,10 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node app.js"
+    "start": "node --harmony-generators app.js"
   },
   "engines": {
-    "node": "0.10.x"
+    "node": "0.12.x"
   },
   "license": "ISC"
 }
